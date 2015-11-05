@@ -1,3 +1,20 @@
+*.tga
+*.pfm
+*.vcxproj
+*.user
+*.sdf
+*.suo
+*.opensdf
+renderer/common/image/x64
+renderer/common/lexers/x64
+renderer/common/sys/x64
+renderer/devices/device/x64
+renderer/devices/device_network/x64
+renderer/devices/device_singleray/x64
+renderer/devices/renderer/x64
+renderer/ipch
+renderer/x64
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

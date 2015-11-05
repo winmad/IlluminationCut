@@ -8,7 +8,7 @@
 -renderer ctrenderer { depth = 9 }
 
 #image size
--size 256 256
+-size 1024 1024
 
 # number of samples per pixel
 -spp 1
@@ -32,7 +32,7 @@
 -budget 400
 
 #output filename
--o conference.tga 
+-o conference.pfm 
 
 
 #light setup 
