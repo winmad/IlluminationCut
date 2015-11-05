@@ -1,0 +1,64 @@
+# To run this file, add commandline parameter for the renderer: -c thisfile
+
+#model file
+-i conference.obj
+
+#different renderers: vplrenderer, ctrenderer, icrenderer, lsrenderer, lcrenderer, mdrenderer
+# substitute the one to run
+-renderer ctrenderer { depth = 9 }
+
+#image size
+-size 256 256
+
+# number of samples per pixel
+-spp 1
+
+# number of virtual point lights
+-vplnumber 1000
+
+# file to read/write the vpl configuration 
+-vplfile conference.vpl
+
+#error for the methods in the lightcuts family
+-error 0.01
+
+# swith sampling on or off for illuminationcut: full, sampling
+-sampling sampling
+
+# controls the slice number for lightslice
+-seed 400
+
+# controls the columns number for lightslice
+-budget 400
+
+#output filename
+-o conference.tga 
+
+
+#light setup 
+-quadlight -120 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight -070 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight -020 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  030 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  080 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  130 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  180 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  230 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  280 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  330 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  380 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  430 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  480 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  530 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  580 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  630 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  680 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  730 100 -150  0 0 80 50 0 0 50 50 50
+-quadlight  780 100 -150  0 0 80 50 0 0 50 50 50
+
+-quadlight  380 200 -150  0 0 50 50 0 0 150 150 150
+-quadlight  780 200 -150  0 0 50 50 0 0 150 150 150
+		
+#camera close to one top corner of the room
+-vp 1478 553 -1000 -vi 478 173 000 -vu 0 1 0 -fov 50 
+ 
